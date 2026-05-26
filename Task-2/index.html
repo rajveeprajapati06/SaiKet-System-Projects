@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    <title>NovaStore</title>
+
+    <!-- Bootstrap -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    />
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Icons -->
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark custom-navbar">
+        <div class="container">
+
+            <a class="navbar-brand fw-bold" href="#">
+                NovaStore
+            </a>
+
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+
+                <ul class="navbar-nav ms-auto">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#products">Products</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#offers">Offers</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+
+        <div class="container">
+
+            <div class="row align-items-center">
+
+                <div class="col-lg-6">
+
+                    <h1>Modern Shopping Experience</h1>
+
+                    <p>
+                        Discover trending fashion, gadgets, and accessories
+                        at unbeatable prices.
+                    </p>
+
+                    <button class="btn btn-custom">
+                        Shop Now
+                    </button>
+
+                </div>
+
+                <div class="col-lg-6 text-center">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=900&auto=format&fit=crop"
+                        class="hero-img img-fluid"
+                        alt="shopping"
+                    />
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Products Section -->
+    <section id="products" class="py-5">
+
+        <div class="container">
+
+            <h2 class="section-title text-center">
+                Featured Products
+            </h2>
+
+            <div class="row mt-5 g-4">
+
+                <!-- Product 1 -->
+                <div class="col-md-4">
+
+                    <div class="card product-card h-100">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=900&auto=format&fit=crop"
+                            class="card-img-top"
+                            alt="shoe"
+                        >
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Running Shoes
+                            </h5>
+
+                            <p class="card-text">
+                                Stylish and comfortable sneakers for daily use.
+                            </p>
+
+                            <h6>₹2,999</h6>
+
+                            <button class="btn btn-custom w-100">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="col-md-4">
+
+                    <div class="card product-card h-100">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?q=80&w=900&auto=format&fit=crop"
+                            class="card-img-top"
+                            alt="phone"
+                        >
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Smart Phone
+                            </h5>
+
+                            <p class="card-text">
+                                Premium smartphone with modern features.
+                            </p>
+
+                            <h6>₹24,999</h6>
+
+                            <button class="btn btn-custom w-100">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="col-md-4">
+
+                    <div class="card product-card h-100">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?q=80&w=900&auto=format&fit=crop"
+                            class="card-img-top"
+                            alt="tshirt"
+                        >
+
+                        <div class="card-body">
+
+                            <h5 class="card-title">
+                                Casual T-Shirt
+                            </h5>
+
+                            <p class="card-text">
+                                Trendy cotton t-shirt with modern fit.
+                            </p>
+
+                            <h6>₹999</h6>
+
+                            <button class="btn btn-custom w-100">
+                                Add to Cart
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Offers Section -->
+    <section id="offers" class="offer-section py-5">
+
+        <div class="container text-center">
+
+            <h2>Special Offer</h2>
+
+            <p class="mt-3">
+                Get 30% OFF on your first order.
+            </p>
+
+            <button id="offerBtn" class="btn btn-light">
+                Show Coupon
+            </button>
+
+            <h3 id="couponText" class="mt-4"></h3>
+
+        </div>
+
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+
+        <div class="container">
+
+            <h2 class="section-title text-center">
+                Contact Us
+            </h2>
+
+            <div class="row justify-content-center mt-5">
+
+                <div class="col-md-6">
+
+                    <form id="contactForm">
+
+                        <div class="mb-3">
+
+                            <input
+                                type="text"
+                                id="name"
+                                class="form-control"
+                                placeholder="Your Name"
+                            >
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <input
+                                type="email"
+                                id="email"
+                                class="form-control"
+                                placeholder="Your Email"
+                            >
+
+                        </div>
+
+                        <div class="mb-3">
+
+                            <textarea
+                                id="message"
+                                rows="5"
+                                class="form-control"
+                                placeholder="Your Message"
+                            ></textarea>
+
+                        </div>
+
+                        <button type="submit" class="btn btn-custom w-100">
+                            Submit
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+
+        <p>
+            © 2026 NovaStore | All Rights Reserved
+        </p>
+
+        <div class="social-icons">
+
+            <a href="#">
+                <i class="fab fa-facebook"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
